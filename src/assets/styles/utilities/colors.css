@@ -1,0 +1,55 @@
+.color-google-blue {
+  color: var(--google-blue) !important;
+}
+
+.background-google-blue {
+  background: var(--google-blue) !important;
+}
+
+.color-google-green {
+  color: var(--google-green) !important;
+}
+
+.background-google-green {
+  background: var(--google-green) !important;
+}
+
+.color-google-red {
+  color: var(--google-red) !important;
+}
+
+.background-google-red {
+  background: var(--google-red) !important;
+}
+
+.color-google-yellow {
+  color: var(--google-yellow) !important;
+}
+
+.background-google-yellow {
+  background: var(--google-yellow) !important;
+}
+
+.color-dark-gray {
+  color: var(--dark-gray) !important;
+}
+
+.background-dark-gray {
+  background: var(--dark-gray) !important;
+}
+
+.color-light-gray {
+  color: var(--light-gray) !important;
+}
+
+.background-light-gray {
+  background: var(--light-gray) !important;
+}
+
+.color-lighter-gray {
+  color: var(--lighter-gray) !important;
+}
+
+.background-lighter-gray {
+  background: var(--lighter-gray) !important;
+}

@@ -1,0 +1,14 @@
+input {
+  font-size: 17px;
+  outline: none;
+  color: var(--dark-gray);
+  padding: 10px 15px;
+  border-radius: 2px;
+  border: 1px solid var(--lighter-gray);
+  transition: 0.2s ease-in-out;
+}
+
+input:hover,
+input:focus {
+  border-color: var(--light-gray);
+}

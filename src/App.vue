@@ -1,22 +1,26 @@
 <template>
-  <div>
-    <app-header></app-header>
-    <main>
-      <search-form
-        @get-results-failure="displayError"
-        @get-results-success="displayResults"
-      />
-      <p v-if="error">
-        Sorry, there was an error with your request
-        <a>View error</a>
-        <span>{{ error }}</span>
-      </p>
-      <p v-if="noResults">Sorry, there are no books matching your search.</p>
-      <search-results
-        @clear-results="clearResults"
-        :results="results"
-      />
-    </main>
+  <div class="page">
+    <div class="main-content">
+      <div class="wrapper">
+        <app-header></app-header>
+        <main>
+          <search-form
+            @get-results-failure="displayError"
+            @get-results-success="displayResults"
+          />
+          <p v-if="error">
+            Sorry, there was an error with your request
+            <a>View error</a>
+            <span>{{ error }}</span>
+          </p>
+          <p v-if="noResults">Sorry, there are no books matching your search.</p>
+          <search-results
+            @clear-results="clearResults"
+            :results="results"
+          />
+        </main>
+      </div>
+    </div>
     <app-footer></app-footer>
   </div>
 </template>
@@ -75,5 +79,5 @@ export default {
 </script>
 
 <style>
-@import url('./assets/styles.css');
+@import url('./assets/styles/styles.css');
 </style>

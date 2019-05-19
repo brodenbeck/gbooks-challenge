@@ -1,14 +1,15 @@
 <template>
-  <form @submit.prevent="search">
-    <input type="text" v-model="query" />
+  <form class="search-form" @submit.prevent="search">
+    <input class="search-form__input m-right-10" type="text" v-model="query" />
     <button
       :class="{
+        'search-form__button': true,
         button: true,
         'button--loading': isLoading,
       }"
       type="submit"
     >
-      Search
+      <img src="../assets/images/search.png" alt="Search books" />
     </button>
   </form>
 </template>
@@ -39,3 +40,13 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.search-form {
+  display: flex;
+}
+
+.search-form__input {
+  flex: 1;
+}
+</style>
