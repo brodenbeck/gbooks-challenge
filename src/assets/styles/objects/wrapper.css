@@ -1,18 +1,12 @@
 .wrapper {
   position: relative;
   height: 100%;
-  width: calc(100vw - 60px);
+  width: calc(100vw - 40px);
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 980px) {
   .wrapper {
-    width: 920px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .wrapper {
-    width: 1380px;
+    width: 940px;
   }
 }

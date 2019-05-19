@@ -9,8 +9,7 @@
             @get-results-success="displayResults"
           />
           <p v-if="error">
-            Sorry, there was an error with your request
-            <a>View error</a>
+            Sorry, there was an error with your request:
             <span>{{ error }}</span>
           </p>
           <p v-if="noResults">Sorry, there are no books matching your search.</p>

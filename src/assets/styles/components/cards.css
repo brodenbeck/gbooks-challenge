@@ -1,0 +1,27 @@
+.cards {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__clear-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 0 20px;
+}
+
+.cards__clear {
+  background-color: var(--white);
+  border-radius: 2px;
+  border: 2px solid var(--google-red);
+  color: var(--google-red);
+  cursor: default;
+  padding: 5px 10px;
+  text-transform: lowercase;
+  transition: 0.2s ease-in-out;
+}
+
+.cards__clear:hover {
+  background-color: var(--google-red);
+  color: var(--white);
+}

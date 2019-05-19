@@ -1,27 +1,34 @@
 <template>
   <ul
     v-if="results.length > 0"
-    class="results"
+    class="cards"
   >
-    <span @click="clearResults">Clear all</span>
-    <a
+    <div class="cards__clear-container">
+      <span class="cards__clear" @click="clearResults">Clear all</span>
+    </div>
+    <li
       v-for="(result, index) in results"
       :key="index"
-      :href="result.link"
+      class="card"
     >
-      <li>
-        <img :src="result.image" :alt="result.title" />
-        Title: {{ result.title }}
-        <span v-if="result.subtitle">Subtitle: {{ result.subtitle }}</span>
-        Authors:
-        <span
-          v-for="(author, index) in result.authors"
-          :key="index"
-        >
-          {{ `${author}${result.authors.length > index + 1 ? ', ' : ''}` }}
+      <div class="card__image-container">
+        <img class="card__image" :src="result.image" :alt="result.title" />
+        <a :href="result.link" class="card__link" target="_blank">View</a>
+      </div>
+      <span class="card__description">
+        <span class="card__title">{{ result.title }}</span>
+        <span v-if="result.subtitle" class="card__subtitle">{{ result.subtitle }}</span>
+        <span class="card__authors">
+          <span
+            class="card__author"
+            v-for="(author, index) in result.authors"
+            :key="index"
+          >
+            {{ `${author}${result.authors.length > index + 1 ? ', ' : ''}` }}
+          </span>
         </span>
-      </li>
-    </a>
+      </span>
+    </li>
   </ul>
 </template>
 

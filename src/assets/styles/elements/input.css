@@ -1,10 +1,11 @@
 input {
-  font-size: 17px;
-  outline: none;
-  color: var(--dark-gray);
-  padding: 10px 15px;
   border-radius: 2px;
   border: 1px solid var(--lighter-gray);
+  color: var(--dark-gray);
+  font-family: var(--base-font);
+  font-size: 17px;
+  outline: none;
+  padding: 10px 15px;
   transition: 0.2s ease-in-out;
 }
 
